@@ -1,10 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import React, {useEffect, useState} from 'react';
 
 function App() {
   return (
     <div className="App">
+      const [lat, setLat] = useState([])
+      const [long, setLong] = useState([])
       
+      useEffect(()=> {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          setLat(position.coords.latitude);
+          setLong(position.coords.longitude);
+        })
+        console.log("latitude is:", lat)
+        console.log("longitude is:", long)
+      }, [lat,long]);
     </div>
   );
 }
