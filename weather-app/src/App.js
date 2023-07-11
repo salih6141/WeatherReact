@@ -3,8 +3,7 @@ import './App.css';
 import React, {useEffect, useState} from 'react';
 
 function App() {
-  return (
-    <div className="App">
+  
       const [lat, setLat] = useState([])
       const [long, setLong] = useState([])
       
@@ -16,6 +15,9 @@ function App() {
         console.log("latitude is:", lat)
         console.log("longitude is:", long)
       }, [lat,long]);
+
+    return (
+    <div className="App">
     </div>
   );
 }
