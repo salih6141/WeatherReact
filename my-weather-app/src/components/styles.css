@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 
 .main{
-    width: 700px;
+    margin: 10px;
     border-radius: 20px;
     background-color: #01579b;
 }
@@ -26,11 +26,16 @@
     font-family: 'Recursive', sans-serif;
 }
 
+.button{
+    width: 35px;
+    height: 35px;
+}
+
 .day{
     padding: 15px;
     color: whitesmoke;
     font-family: 'Recursive', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -61,7 +66,17 @@
     font-weight: 600;
 }
 
-.button{
-    width: 35px;
-    height: 35px;
+.forecast{
+    border-radius: 20px;
+    background-color: #01579b;
+    color: whitesmoke;
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Recursive', sans-serif;
+    font-size: 19px;
+}
+
+.flex-forecast{
+    display: flex;
+    justify-content: space-between;
 }
